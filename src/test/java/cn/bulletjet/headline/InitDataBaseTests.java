@@ -17,15 +17,15 @@ public class InitDataBaseTests {
 
     @Test
     public void contextLoads() {
-//        for (int i = 0; i <10 ; i++) {
-//           User user=new User();
-//           user.setUsername("yhl"+i);
-//           user.setPassword("month"+i);
-//           user.setSalt("");
-//           user.setHeadUrl("");
-//           userDao.save(user);
+        for (int i = 0; i < 10; i++) {
+            User user = new User();
+            user.setUsername("yhl" + Math.random());
+            user.setPassword("month" + Math.random());
+            user.setSalt("");
+            user.setHeadUrl("");
+            userDao.save(user);
 
-        // }
+        }
         System.out.println(userDao.findById(0).orElse(null));
 
     }
