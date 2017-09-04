@@ -18,8 +18,8 @@ HELLO VM
 key:${key}
 values:${map[key]}
 </#list>
-${user.getUsername()}
-    ${user.name}
+<#---${user.getUsername()}
+    ${user.name}-->
 <#assign title='111111'>
 <#include "header.ftl" parse=true/>
 <#function getColor arg1 arg2>

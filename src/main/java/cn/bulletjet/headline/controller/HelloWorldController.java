@@ -1,18 +1,13 @@
 package cn.bulletjet.headline.controller;
 
-import cn.bulletjet.headline.Aspect.LogAspect;
-import cn.bulletjet.headline.model.User;
-
 import cn.bulletjet.headline.service.HeadlineService;
-import org.apache.juli.logging.LogFactory;
+import org.hibernate.dialect.MySQL57Dialect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -26,11 +21,12 @@ public class HelloWorldController {
     @Autowired
     private HeadlineService headlineService;
 
-    @RequestMapping(path={"/index.html","/"})
+    @RequestMapping(path = {"/index.html"})
     public @ResponseBody String toIndex(HttpSession session) {
-        logger.info("visit index page");
-        return "Hello World:"+ session.getAttribute("message")+"<br>say:<br>"+ headlineService.say()+"<br>";
+        logger.info("visit first page");
+        return "Hello World:" + session.getAttribute("message") + "<br>say:<br>" + headlineService.say() + "<br>";
     }
+
     @RequestMapping(value={"/profile/{groupId}/{userId}"})
     public @ResponseBody String profile(@PathVariable("groupId") String groupId,
                                             @PathVariable("userId") int userId,
@@ -39,7 +35,8 @@ public class HelloWorldController {
    {
        return String.format("{%s},{%d},{%d},{%s}",groupId,userId,type,key);
    }
-   @RequestMapping(value={"/vm"})
+
+    @RequestMapping(value = {"/vm"})
    public String news(Model model){
        model.addAttribute("value1",100);
        List<String> colors= Arrays.asList(new String[]{"red","yellow","white"});
@@ -49,7 +46,7 @@ public class HelloWorldController {
        }
        model.addAttribute("colors",colors);
        model.addAttribute("map",map);
-       model.addAttribute("user",new User("jim"));
+//       model.addAttribute("user",new User("jim"));
        return "news";
    }
    @RequestMapping("/request")
@@ -113,5 +110,6 @@ public class HelloWorldController {
         return  "error:"+e.getMessage();
 
     }
+
 }
 
