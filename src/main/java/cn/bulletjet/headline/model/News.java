@@ -2,9 +2,12 @@ package cn.bulletjet.headline.model;
 
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 public class News {
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
@@ -20,18 +23,24 @@ public class News {
     @Column(name = "comment_count")
     private int commentCount;
     @Column(name = "created_date")
-    private String createdDate;
+    private Date createdDate;
     @ManyToOne(targetEntity = User.class)
     @JoinColumn(name = "user_id")
     private User user;
-
-
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public String getTitle() {
@@ -70,15 +79,15 @@ public class News {
         return commentCount;
     }
 
-    public void setCommentCount(int commentCount) {
+    public void setCommentCount(int i) {
         this.commentCount = commentCount;
     }
 
-    public String getCreatedDate() {
+    public Date getCreatedDate() {
         return createdDate;
     }
 
-    public void setCreatedDate(String createdDate) {
+    public void setCreatedDate(Date createdDate) {
         this.createdDate = createdDate;
     }
 

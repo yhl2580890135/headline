@@ -1,7 +1,6 @@
 package cn.bulletjet.headline.controller;
 
 import cn.bulletjet.headline.service.HeadlineService;
-import org.hibernate.dialect.MySQL57Dialect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +20,7 @@ public class HelloWorldController {
     @Autowired
     private HeadlineService headlineService;
 
-    @RequestMapping(path = {"/index.html"})
+    @RequestMapping(path = {"/index.html"}, method = {RequestMethod.GET, RequestMethod.POST})
     public @ResponseBody String toIndex(HttpSession session) {
         logger.info("visit first page");
         return "Hello World:" + session.getAttribute("message") + "<br>say:<br>" + headlineService.say() + "<br>";

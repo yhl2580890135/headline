@@ -12,7 +12,6 @@ HELLO VM
    -->
 <#list colors as n>
     color:${n}
-
 </#list>
 <#list map?keys as key>
 key:${key}
@@ -33,7 +32,6 @@ ${getColor(n,n_index)}
 <#assign  hello3='${hello1} world'>
     hello2:${hello2}
     hello3:${hello3}
-    size;${colors.size()}
 </pre>
 </body>
 </html>
