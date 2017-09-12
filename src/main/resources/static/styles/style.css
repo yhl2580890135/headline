@@ -2,6 +2,7 @@
 
 */
 
+
 html {
     background-color: #f0f3f4;
 }
@@ -5134,11 +5135,9 @@ a.text-#000000:hover {
         background-color: #7266ba;
     }
 }
-
 .subject-nav-pills {
     padding: 15px 0;
 }
-
 /* line 2, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .content {
     cursor: pointer;
@@ -5150,57 +5149,47 @@ a.text-#000000:hover {
     padding-left: 5px;
     position: relative;
 }
-
 /* line 12, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post:hover .content {
     background-color: rgba(225, 227, 230, 0.4);
 }
-
 /* line 15, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post:hover .summary a {
     color: black;
 }
-
 /* line 18, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post.detail {
     margin-top: 80px;
 }
-
 /* line 21, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post.detail:hover {
     background-color: transparent;
 }
-
 /* line 25, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post.detail .content {
     cursor: default;
 }
-
 /* line 29, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post.detail .view-original {
     display: none;
 }
-
 /* line 31, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post.detail .summary a {
     display: inline;
     color: black;
 }
-
 /* line 38, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .upvote {
     position: absolute;
     left: 5px;
     top: 12px;
 }
-
 /* line 43, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .upvote a {
     width: 45px;
     font-size: 14px;
     border-color: #ECECEC;
 }
-
 /* line 48, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .upvote a.liked, .post .upvote a.favorited {
     border-left-color: #25bb9b;
@@ -5208,36 +5197,30 @@ a.text-#000000:hover {
     background-color: #25bb9b;
     color: #FFF !important;
 }
-
 /* line 54, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .upvote a.liked {
     border-top-color: #25bb9b;
 }
-
 /* line 55, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .upvote a.favorited {
     border-bottom-color: #25bb9b;
 }
-
 /* line 57, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .upvote a span {
     display: block;
     line-height: 16px;
     font-size: 10px;
 }
-
 /* line 78, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .upvote .favorite-button span {
     display: none;
 }
-
 /* line 83, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .content {
     min-height: 85px;
     margin: 4px 0 4px 50px;
     padding: 5px 85px 10px 0;
 }
-
 .content-img {
     width: 100px;
     margin-right: 10px;
@@ -5245,11 +5228,9 @@ a.text-#000000:hover {
     height: 80px;
     overflow: hidden;
 }
-
 .content-main {
     margin-left: 120px;
 }
-
 /* line 89, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .title {
     text-overflow: ellipsis;
@@ -5259,36 +5240,30 @@ a.text-#000000:hover {
     font-weight: 500;
     line-height: 1;
 }
-
 /* line 98, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .summary {
     margin: 2px 0 10px 0;
     word-wrap: break-word;
 }
-
 /* line 101, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .summary a {
     display: block;
     color: rgba(0, 0, 0, 0.5);
 }
-
 /* line 107, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post a {
     color: #063642;
     text-decoration: none;
     font-size: 16px;
 }
-
 /* line 111, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post a:hover {
     color: #25bb9b;
 }
-
 /* line 112, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post a:visited {
     color: #888;
 }
-
 /* line 115, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .meta {
     display: inline-block;
@@ -5296,25 +5271,21 @@ a.text-#000000:hover {
     vertical-align: top;
     color: #999;
 }
-
 /* line 121, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .meta a {
     color: #999;
     font-size: 14px;
 }
-
 /* line 122, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .meta span {
     display: inline-block;
     margin-left: 10px;
     font-size: 14px;
 }
-
 /* line 123, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .meta .fa.fa-thumbs-up {
     color: #d43f3a;
 }
-
 /* line 127, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .subject-name {
     width: 100px;
@@ -5325,12 +5296,10 @@ a.text-#000000:hover {
     text-align: center;
     line-height: 14px;
 }
-
 /* line 135, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .subject-name a {
     font-size: 12px;
 }
-
 /* line 139, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .user-info {
     width: 100px;
@@ -5339,24 +5308,20 @@ a.text-#000000:hover {
     top: 10px;
     text-align: center;
 }
-
 /* line 146, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .user-info .user-avatar {
     padding: 10px;
 }
-
 /* line 149, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .user-info .user-avatar a {
     display: inline-block;
     border-radius: 50%;
 }
-
 /* line 152, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .user-info .user-avatar a img {
     width: 32px;
     height: 32px;
 }
-
 /* line 156, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .user-info .info {
     display: none;
@@ -5372,12 +5337,10 @@ a.text-#000000:hover {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     font-size: 12px;
 }
-
 /* line 170, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .user-info .info h5 {
     margin-top: 0;
 }
-
 /* line 171, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .user-info .info h4 {
     font-size: 16px;
@@ -5385,17 +5348,14 @@ a.text-#000000:hover {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
 /* line 172, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .user-info .info a {
     font-size: 12px;
 }
-
 /* line 174, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .user-info .info .bio {
     text-align: left;
 }
-
 /* line 176, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .user-info .info:before {
     display: inline-block;
@@ -5408,7 +5368,6 @@ a.text-#000000:hover {
     border-top-color: rgba(0, 0, 0, 0.1);
     content: '';
 }
-
 /* line 188, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .user-info .info:after {
     position: absolute;
@@ -5420,7 +5379,6 @@ a.text-#000000:hover {
     border-left: 6px solid transparent;
     content: '';
 }
-
 /* line 201, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/posts.scss */
 .post .user-info:hover .info {
     display: block;
@@ -5430,7 +5388,6 @@ a.text-#000000:hover {
 .post-comment-form form {
     margin-top: 5px;
 }
-
 /*
 
         Creating a sprite from following images:
@@ -5751,7 +5708,6 @@ a.text-#000000:hover {
         background-size: 80px 64px;
     }
 }
-
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -5815,7 +5771,6 @@ footer {
     bottom: 0;
     vertical-align: baseline;
 }
-
 /* line 63, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 footer .qrcode {
     display: none;
@@ -5826,22 +5781,18 @@ footer .qrcode {
     text-align: center;
     color: #333;
 }
-
 /* line 72, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 footer .qrcode img {
     max-width: 100%;
 }
-
 /* line 74, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 footer a {
     color: #FFF;
 }
-
 /* line 76, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 footer a:visited {
     color: #FFF;
 }
-
 /* line 77, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 footer a:hover, footer a:active {
     color: #FFF;
@@ -5861,7 +5812,6 @@ header.navbar {
     color: #FFF;
     box-shadow: 0px 1px 0px 0px rgba(83, 69, 64, 0.16), 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
 }
-
 /* line 100, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar .navbar-brand {
     display: inline-block;
@@ -5869,18 +5819,16 @@ header.navbar .navbar-brand {
     margin-left: 5px;
     margin-top: 5px;
     padding: 5px 5px 5px 60px;
-    background: url(/assets/logo-cf19f42eba7cd98c38a46a158aef1cd5.png) no-repeat 0 4px;
+    /*background: url(/assets/logo-cf19f42eba7cd98c38a46a158aef1cd5.png) no-repeat 0 4px;*/
     background-size: 46px 46px;
     text-decoration: none;
     color: #FFF;
     opacity: 1;
 }
-
 /* line 112, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar .navbar-brand:focus {
     color: #FFF;
 }
-
 /* line 114, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar .navbar-brand h1 {
     margin: 0 0 2px 0;
@@ -5888,46 +5836,38 @@ header.navbar .navbar-brand h1 {
     line-height: 28px;
     font-weight: 300;
 }
-
 /* line 115, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar .navbar-brand h3 {
     margin: 0;
     font-size: 12px;
     font-weight: 300;
 }
-
 /* line 117, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar .navbar-brand:hover {
     color: #FFF;
 }
-
 /* line 120, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar form {
     margin-top: 15px;
 }
-
 /* line 124, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar .navbar-nav {
     margin-top: 15px;
 }
-
 /* line 127, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar .navbar-nav > li > a {
     color: #FFF;
     padding: 7px 10px 5px;
 }
-
 /* line 132, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar .navbar-nav > li.active > a {
     color: #FFF;
     background-color: transparent;
 }
-
 /* line 138, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar .nav > li > a {
     border-bottom: 2px solid transparent;
 }
-
 /* line 140, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar .nav > li > a:hover,
 header.navbar .nav > li > a:focus,
@@ -5938,12 +5878,10 @@ header.navbar .nav > li.active > a:hover {
     border-color: #FFF;
     background-color: transparent;
 }
-
 /* line 150, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar .navbar-toggle {
     margin-top: 15px;
 }
-
 /* line 152, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 header.navbar .navbar-toggle .icon-bar {
     background-color: #FFF;
@@ -5984,7 +5922,6 @@ header.navbar .navbar-toggle .icon-bar {
 .daily {
     margin-bottom: 30px;
 }
-
 /* line 187, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .daily h3.date {
     padding: 10px;
@@ -5993,12 +5930,10 @@ header.navbar .navbar-toggle .icon-bar {
     font-weight: 600;
     font-size: 20px;
 }
-
 /* line 188, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .daily h3.date small {
     color: #063642;
 }
-
 /* line 191, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .daily .posts {
     margin: 0;
@@ -6016,7 +5951,6 @@ header.navbar .navbar-toggle .icon-bar {
 .welcome_app_download footer .qrcode {
     display: none;
 }
-
 /* line 208, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .welcome_app_download #quick-download {
     display: none;
@@ -6037,39 +5971,32 @@ header.navbar .navbar-toggle .icon-bar {
     background-size: cover;
     border-bottom: 1px solid rgba(6, 54, 66, 0.9);
 }
-
 /* line 225, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .hero img {
     max-width: 432px;
 }
-
 /* line 227, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .hero .handheld {
     text-align: right;
 }
-
 /* line 228, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .hero .intro {
     margin-left: 50px;
 }
-
 /* line 230, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .hero .intro .title {
     margin: 90px 0 50px 0;
     color: #FFF;
     text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.4);
 }
-
 /* line 237, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .hero .app-qrcode {
     max-width: 135px;
 }
-
 /* line 241, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .hero .buttons {
     margin-left: 30px;
 }
-
 /* line 243, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .hero .buttons .btn {
     width: 150px;
@@ -6087,33 +6014,28 @@ header.navbar .navbar-toggle .icon-bar {
         text-align: center;
     }
 }
-
 @media (min-width: 480px) and (max-width: 767px) {
     /* line 252, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
     .hero .handheld {
         text-align: center;
     }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
     /* line 255, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
     .hero .handheld {
         text-align: center;
     }
 }
-
 /* line 258, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .feedback {
     margin-bottom: 50px;
 }
-
 /* line 260, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .feedback ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 /* line 265, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .feedback ul blockquote {
     border-left: none;
@@ -6121,7 +6043,6 @@ header.navbar .navbar-toggle .icon-bar {
     padding: 10px;
     font-size: 15px;
 }
-
 /* line 271, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .feedback ul blockquote p {
     margin-bottom: 5px;
@@ -6147,7 +6068,6 @@ header.navbar .navbar-toggle .icon-bar {
     color: #EFEFEF;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 }
-
 /* line 295, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 #weixin-mask .open-tips {
     width: 100%;
@@ -6157,7 +6077,6 @@ header.navbar .navbar-toggle .icon-bar {
     padding: 5px 18px;
     background: rgba(0, 0, 0, 0.5);
 }
-
 /* line 303, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 #weixin-mask .open-tips h3 {
     margin: 0;
@@ -6169,18 +6088,15 @@ header.navbar .navbar-toggle .icon-bar {
     -o-background-size: 60px;
     background-size: 60px;
 }
-
 /* line 315, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 #weixin-mask .applogo {
     height: 60px;
     margin: 20px;
 }
-
 /* line 321, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 #weixin-mask .title {
     margin: 30px;
 }
-
 /* line 325, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 #weixin-mask img {
     max-width: 150px;
@@ -6191,25 +6107,21 @@ header.navbar .navbar-toggle .icon-bar {
 .comments {
     margin: 20px 0;
 }
-
 /* line 331, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .comments .media {
     margin: 10px 0;
     border-bottom: 1px solid #f0f0f0;
     padding-bottom: 5px;
 }
-
 /* line 333, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .comments .media h4 {
     font-size: 14px;
 }
-
 /* line 339, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .comments .media .media-left img {
     width: 50px;
     height: 50px;
 }
-
 /* line 345, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .comments .media:last-child {
     border-bottom: none;
@@ -6224,7 +6136,6 @@ header.navbar .navbar-toggle .icon-bar {
 .weixin-qrcode-dropdown {
     display: inline-block;
 }
-
 /* line 358, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .weixin-qrcode-dropdown .weixin-qrcode-dropdown-menu {
     min-width: 122px;
@@ -6234,7 +6145,6 @@ header.navbar .navbar-toggle .icon-bar {
     top: 110%;
     left: -76px;
 }
-
 /* line 367, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .weixin-qrcode-dropdown .weixin-qrcode-img img {
     width: 132px;
@@ -6248,7 +6158,6 @@ header.navbar .navbar-toggle .icon-bar {
     text-align: center;
     z-index: 99;
 }
-
 /* line 379, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .help-modal.help-modal-footer {
     padding-left: 5px;
@@ -6266,10 +6175,9 @@ header.navbar .navbar-toggle .icon-bar {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: url(/assets/logo-cf19f42eba7cd98c38a46a158aef1cd5.png) no-repeat;
+    /*background: url(/assets/logo-cf19f42eba7cd98c38a46a158aef1cd5.png) no-repeat;*/
     vertical-align: middle;
 }
-
 /* line 399, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .help-modal-footer .btn {
     margin-top: 10px;
@@ -6298,13 +6206,11 @@ header.navbar .navbar-toggle .icon-bar {
 .settings-page .subscribe label {
     font-weight: normal;
 }
-
 /* line 426, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .settings-page .user-avatar-wrap {
     margin-bottom: 30px;
     text-align: center;
 }
-
 /* line 431, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .settings-page .user-avatar {
     width: 80px;
@@ -6316,7 +6222,6 @@ header.navbar .navbar-toggle .icon-bar {
     background-size: cover;
     vertical-align: bottom;
 }
-
 /* line 442, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .settings-page .avatar-field {
     display: inline-block;
@@ -6326,7 +6231,6 @@ header.navbar .navbar-toggle .icon-bar {
 .subject-page .subject-cover {
     vertical-align: bottom;
 }
-
 /* line 449, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .subject-page .cover-field {
     display: inline-block;
@@ -6337,25 +6241,21 @@ header.navbar .navbar-toggle .icon-bar {
     margin: 20px 10px;
     text-align: left;
 }
-
 /* line 455, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .like-users ul {
     margin-left: 0;
 }
-
 /* line 456, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .like-users li {
     padding-left: 2px;
     padding-right: 2px;
 }
-
 /* line 457, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .like-users a {
     display: inline-block;
     width: 32px;
     overflow: hidden;
 }
-
 /* line 458, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .like-users img {
     width: 32px;
@@ -6367,18 +6267,15 @@ header.navbar .navbar-toggle .icon-bar {
     max-width: 210px;
     margin-bottom: 25px;
 }
-
 /* line 467, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .gift .cover {
     display: inline-block;
     min-height: 280px;
 }
-
 /* line 471, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .gift .cover img {
     width: 100%;
 }
-
 /* line 474, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .gift h5 {
     padding: 0;
@@ -6388,18 +6285,15 @@ header.navbar .navbar-toggle .icon-bar {
 .post-type-radios:first-child {
     margin-bottom: 5px;
 }
-
 /* line 483, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .post-type-radios .radio {
     display: inline-block;
     margin-right: 8px;
 }
-
 /* line 485, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .post-type-radios .radio input[type=radio] {
     position: static;
 }
-
 /* line 489, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .post-type-radios .form-control {
     display: inline-block;
@@ -6407,7 +6301,6 @@ header.navbar .navbar-toggle .icon-bar {
     height: auto;
     margin-right: 2px;
 }
-
 /* line 496, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .post-type-radios p.help-block {
     display: inline-block;
@@ -6426,7 +6319,6 @@ header.navbar .navbar-toggle .icon-bar {
     bottom: 0;
     background: #f3f3f8;
 }
-
 /* line 516, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 #quick-download .close-link {
     display: block;
@@ -6439,7 +6331,6 @@ header.navbar .navbar-toggle .icon-bar {
     text-align: center;
     color: #bdbdd1;
 }
-
 /* line 528, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 #quick-download .download-link {
     display: block;
@@ -6452,7 +6343,6 @@ header.navbar .navbar-toggle .icon-bar {
     color: #666;
     position: relative;
 }
-
 /* line 539, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 #quick-download .download-link h3 {
     margin: 3px 0 2px 0;
@@ -6460,7 +6350,6 @@ header.navbar .navbar-toggle .icon-bar {
     font-weight: 100;
     opacity: 0.8;
 }
-
 /* line 540, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 #quick-download .download-link h4 {
     margin: 0;
@@ -6468,7 +6357,6 @@ header.navbar .navbar-toggle .icon-bar {
     font-weight: 100;
     opacity: 0.5;
 }
-
 /* line 542, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 #quick-download .download-link .btn {
     position: absolute;
@@ -6481,14 +6369,12 @@ header.navbar .navbar-toggle .icon-bar {
     top: 50%;
     margin-top: -100px;
 }
-
 /* line 554, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 #quick-download-app-modal .modal-footer {
     text-align: center;
     padding: 0;
     border: none;
 }
-
 /* line 559, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 #quick-download-app-modal .modal-footer .btn {
     padding: 15px;
@@ -6500,17 +6386,14 @@ header.navbar .navbar-toggle .icon-bar {
 .follows .media {
     margin: 20px 0 35px 0;
 }
-
 /* line 572, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .follows .media-body {
     width: 100%;
 }
-
 /* line 573, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .follows .media-heading {
     line-height: 20px;
 }
-
 /* line 575, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .follows .media-heading small {
     display: inline-block;
@@ -6523,31 +6406,26 @@ header.navbar .navbar-toggle .icon-bar {
     margin: 0;
     padding: 0 5px;
 }
-
 /* line 585, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .subjects li {
     padding-bottom: 10px;
     list-style: none;
     border-bottom: 1px dashed #EFEFEF;
 }
-
 /* line 590, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .subjects li:last-child {
     border-bottom: none;
 }
-
 /* line 592, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .subjects li small a,
 .subjects li .meta,
 .subjects li .meta a {
     color: #999;
 }
-
 /* line 596, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .subjects li .meta a {
     border-bottom: 1px solid #CCC;
 }
-
 /* line 601, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .subjects li .meta span {
     display: inline-block;
@@ -6571,24 +6449,20 @@ header.navbar .navbar-toggle .icon-bar {
     position: relative;
     top: -25px;
 }
-
 /* line 624, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .app-iphone .slide {
     width: 320px;
     height: 472px;
 }
-
 /* line 627, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .app-iphone .slide .item {
     height: 472px;
 }
-
 /* line 630, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .app-iphone .slide .item img {
     width: 320px;
     height: 569px;
 }
-
 /* line 635, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/application.scss */
 .app-iphone .slide .item .carousel-caption {
     background-color: #000;
@@ -6613,7 +6487,6 @@ header.navbar .navbar-toggle .icon-bar {
 #install-chrome-extension {
     display: none;
 }
-
 @media (min-width: 320px) and (max-width: 479px) {
     /* line 2, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/responsive.scss */
     #quick-download {
@@ -6713,7 +6586,6 @@ header.navbar .navbar-toggle .icon-bar {
         display: none;
     }
 }
-
 @media (min-width: 480px) and (max-width: 767px) {
     /* line 59, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/responsive.scss */
     #quick-download {
@@ -6730,7 +6602,6 @@ header.navbar .navbar-toggle .icon-bar {
         display: none;
     }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
     /* line 65, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/responsive.scss */
     .post .user-info .info {
@@ -6742,7 +6613,6 @@ header.navbar .navbar-toggle .icon-bar {
         display: none;
     }
 }
-
 @media (min-width: 992px) and (max-width: 1024px) {
     /* line 70, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/responsive.scss */
     .container {
@@ -6755,7 +6625,6 @@ header.navbar .navbar-toggle .icon-bar {
         width: 100px;
     }
 }
-
 @media (min-width: 1024px) {
     /* line 75, /var/www/prod/v2.toutiao.io/app/assets/stylesheets/responsive.scss */
     .container {
@@ -6780,7 +6649,6 @@ header.navbar .navbar-toggle .icon-bar {
     position: fixed;
     top: 60px;
 }
-
 .votebar .up,
 .votebar .down {
     background: #eff6fa;
@@ -6796,16 +6664,13 @@ header.navbar .navbar-toggle .icon-bar {
     width: 38px;
     outline: none;
 }
-
 .votebar .up {
     height: 44px;
 }
-
 .votebar .label {
     display: block;
     text-indent: -9999em;
 }
-
 .votebar .count {
     left: 0;
     position: absolute;
@@ -6816,7 +6681,6 @@ header.navbar .navbar-toggle .icon-bar {
     /*line-height: 22px;*/
     display: block;
 }
-
 .votebar .vote-arrow {
     display: inline-block;
     border: 6px solid transparent;
@@ -6824,29 +6688,24 @@ header.navbar .navbar-toggle .icon-bar {
     height: 0;
     width: 0;
 }
-
 .votebar .up .vote-arrow {
     border-bottom-color: #25bb9b;
     border-top-style: solid;
     border-top-width: 0;
     margin-bottom: 10px;
 }
-
 .votebar .up:hover .vote-arrow,
 .votebar .up.pressed .vote-arrow {
     border-bottom-color: #FFF;
 }
-
 .votebar .down .vote-arrow {
     border-bottom-width: 0;
     border-top-color: #25bb9b;
 }
-
 .votebar .down:hover .vote-arrow,
 .votebar .down.pressed .vote-arrow {
     border-top-color: #fff;
 }
-
 .votebar .up:hover,
 .votebar .down:hover,
 .votebar .up.pressed,
@@ -6854,11 +6713,9 @@ header.navbar .navbar-toggle .icon-bar {
     background: #25bb9b;
     color: #fff;
 }
-
 .votebar .down {
     margin: 5px 0 0;
 }
-
 .votebar .rcmd-label {
     color: #fff;
     background: #E54E38;
@@ -6871,7 +6728,6 @@ header.navbar .navbar-toggle .icon-bar {
 .letter-list {
     margin: -10px -20px 0;
 }
-
 .letter-list li {
     border-bottom: 1px solid #E0E0E0;
     padding: 20px 10px;
@@ -6879,7 +6735,6 @@ header.navbar .navbar-toggle .icon-bar {
     margin: 0 10px;
     position: relative;
 }
-
 .letter-link {
     display: block;
     height: 100%;
@@ -6889,7 +6744,6 @@ header.navbar .navbar-toggle .icon-bar {
     top: 0;
     z-index: 1;
 }
-
 .letter-list li:hover {
     background: #ECF0F1;
     cursor: pointer;
@@ -6902,7 +6756,6 @@ header.navbar .navbar-toggle .icon-bar {
     font-size: 12px;
 
 }
-
 .letter-info p {
     line-height: 2;
 }
@@ -6910,18 +6763,15 @@ header.navbar .navbar-toggle .icon-bar {
 .letter-info a {
     color: #21a88b;
 }
-
 .letter-info a:hover {
     color: #25bb9b;
 }
-
 .letter-detail {
     float: left;
     font-size: 14px;
     line-height: 1em;
     width: 320px;
 }
-
 .letter-detail .letter-name {
     position: absolute;
     left: 80px;
@@ -6932,7 +6782,6 @@ header.navbar .navbar-toggle .icon-bar {
     /*display: block;*/
 
 }
-
 .letter-brief {
     position: absolute;
     left: 80px;
@@ -6948,7 +6797,6 @@ header.navbar .navbar-toggle .icon-bar {
     /*for ie8不变省略号问题*/
     word-wrap: normal;
 }
-
 .msg-num {
     position: absolute;
     top: 0;
@@ -6963,13 +6811,11 @@ header.navbar .navbar-toggle .icon-bar {
     text-align: center;
     z-index: 10;
 }
-
 .chat-headbox {
     position: relative;
     float: left;
     z-index: 2;
 }
-
 .list-head {
     display: block;
     float: left;
@@ -6979,7 +6825,6 @@ header.navbar .navbar-toggle .icon-bar {
     border: 1px solid #ededed;
     border-radius: 50px;
 }
-
 .l-operate-bar {
     white-space: nowrap;
     position: absolute;
@@ -6988,15 +6833,12 @@ header.navbar .navbar-toggle .icon-bar {
     font-size: 12px;
     z-index: 2;
 }
-
 .l-operate-bar a {
     color: #21a88b;
 }
-
 .l-operate-bar a:hover {
     color: #25bb9b;
 }
-
 .follow-list .l-operate-bar a,
 .follow-list .l-operate-bar a:hover {
     color: #FFF;
@@ -7010,17 +6852,14 @@ header.navbar .navbar-toggle .icon-bar {
     white-space: nowrap;
     font-size: 12px;
 }
-
 .letter-chatlist {
     padding: 20px;
 }
-
 .letter-chatlist li {
     margin-bottom: 40px;
     overflow: hidden;
     list-style: none;
 }
-
 .letter-chat {
     background: #ECF1F1;
     width: 600px;
@@ -7029,7 +6868,6 @@ header.navbar .navbar-toggle .icon-bar {
     text-align: left;
     color: #666;
 }
-
 .letter-chatlist .list-head {
     margin: 20px 20px 0 0;
 }
@@ -7042,19 +6880,16 @@ header.navbar .navbar-toggle .icon-bar {
 .letter-chat:hover .sns-action-reply {
     visibility: visible;
 }
-
 .letter-chatlist .tooltip {
     position: relative;
     float: left;
 
 }
-
 .letter-chatlist .my-reply .tooltip.right,
 .letter-chatlist .tooltip.right {
     padding: 0;
     margin: 0;
 }
-
 .letter-chatlist .tooltip.right .tooltip-arrow {
     border-right-color: #ECF1F1;
     left: -9px;
@@ -7066,7 +6901,6 @@ header.navbar .navbar-toggle .icon-bar {
     line-height: 1.6;
     font-size: 14px;
 }
-
 .chat-content a {
     color: #25bb9b;
 }
@@ -7081,7 +6915,6 @@ header.navbar .navbar-toggle .icon-bar {
 .letter-chat .letter-info {
     width: 120px;
 }
-
 .tooltip {
     position: absolute;
     display: block;
@@ -7090,28 +6923,23 @@ header.navbar .navbar-toggle .icon-bar {
     font-size: 14px;
     z-index: 99;
 }
-
 .letter-chatlist .my-reply .tooltip.right, .letter-chatlist .tooltip.right {
     padding: 0;
     margin: 0;
 }
-
 .letter-chatlist .tooltip {
     position: relative;
     float: left;
 }
-
 .tooltip.right {
     padding: 0 5px;
     margin-left: 3px;
 }
-
 .letter-chatlist .tooltip.right .tooltip-arrow {
     border-right-color: #ECF1F1;
     left: -9px;
     margin-top: -30px;
 }
-
 .tooltip.right .tooltip-arrow {
     border-right-color: #34495e;
     border-width: 9px 9px 9px 0;
@@ -7119,7 +6947,6 @@ header.navbar .navbar-toggle .icon-bar {
     left: -4px;
     top: 50%;
 }
-
 .tooltip-arrow, .tooltip-arrow i {
     position: absolute;
     width: 0;
@@ -7171,7 +6998,6 @@ header.navbar .navbar-toggle .icon-bar {
     overflow: auto;
     overflow-x: hidden;
 }
-
 /*弹窗框架样式*/
 .pop-box {
     /*border-radius: 10px;*/
@@ -7180,7 +7006,6 @@ header.navbar .navbar-toggle .icon-bar {
     /*position: absolute;
     z-index: 201;*/
 }
-
 .pop-title {
     padding: 15px 20px;
     overflow: hidden;
@@ -7188,7 +7013,6 @@ header.navbar .navbar-toggle .icon-bar {
     border-radius: 4px 4px 0 0;
 
 }
-
 .pop-title h1 {
     margin: 0;
     float: left;
@@ -7196,7 +7020,6 @@ header.navbar .navbar-toggle .icon-bar {
     font-weight: normal;
     line-height: 20px;
 }
-
 .pop-title h1:before {
     background: #FF6547;
     content: "";
@@ -7207,13 +7030,11 @@ header.navbar .navbar-toggle .icon-bar {
     margin-bottom: 2px;
     vertical-align: middle;
 }
-
 .pop-title-link {
     float: right;
     font-size: 16px;
     color: #1abc9c;
 }
-
 .pop-close {
     display: block;
     text-indent: -9999em;
@@ -7224,42 +7045,34 @@ header.navbar .navbar-toggle .icon-bar {
     margin-top: 4px;
     background: url(../images/img/pop-close.png) no-repeat;
 }
-
 .pop-content {
     padding: 20px;
 }
-
 .pop-text-box {
     max-height: 200px;
     overflow-y: auto;
     margin-bottom: 20px;
 }
-
 .pop-text-box p {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
 /*弹窗内容大间距*/
 .pop-padding-lg {
     padding: 20px 50px;
 }
-
 .pop-tip {
     font-size: 14px;
     margin-bottom: 10px;
 }
-
 .pop-bigbtn {
     padding: 10px 45px;
     font-size: 16px;
 }
-
 .pop-msg-tip {
     font-size: 16px;
     padding: 30px;
 }
-
 .pop-msg-tip .fui-cross {
     color: #FFF;
     background: #ff6547;
@@ -7283,7 +7096,6 @@ header.navbar .navbar-toggle .icon-bar {
     position: absolute;
     z-index: 1000;
 }
-
 /*弹窗框架样式结束*/
 .input-section .control-label {
     padding: 0 15px;
@@ -7295,7 +7107,6 @@ header.navbar .navbar-toggle .icon-bar {
     text-align: right;
     margin-bottom: 0;
 }
-
 .form-group:after, .form-group:before {
     clear: both;
     content: ".";
@@ -7303,26 +7114,21 @@ header.navbar .navbar-toggle .icon-bar {
     height: 0;
     visibility: hidden;
 }
-
 .input-section .control-group {
     line-height: 42px;
     height: 42px;
 }
-
 .form-group .control-group {
     float: left;
 }
-
 .control-group input {
     height: 34px;
     line-height: 34px;
 }
-
 .control-group {
     position: relative;
     width: 260px;
 }
-
 .control-group > .input-icon {
     position: absolute;
     top: 9px;
@@ -7336,18 +7142,15 @@ header.navbar .navbar-toggle .icon-bar {
     line-height: 20px;
     display: none;
 }
-
 /* 错误提示icon */
 .input-icon.icon-remove-sign {
     color: #ff5400;
 }
-
 /* 成功提示icon */
 .input-icon.icon-ok-sign {
     color: #25bb9b;
     display: none;
 }
-
 /* 提示icon及提示文案显示 */
 .error .icon-remove-sign,
 .success .icon-ok-sign,
@@ -7355,7 +7158,6 @@ header.navbar .navbar-toggle .icon-bar {
 .focus .input-tip {
     display: block;
 }
-
 /* 提示文案默认隐藏 */
 .input-tip {
     position: absolute;
@@ -7365,12 +7167,10 @@ header.navbar .navbar-toggle .icon-bar {
     font-size: 14px;
     line-height: 14px;
 }
-
 /* 错误提示文案 */
 .error .input-tip {
     color: #ff5400;
 }
-
 /*输入框*/
 textarea,
 .input-section input[type="text"],
@@ -7386,7 +7186,6 @@ textarea,
     border-radius: 3px;
     outline: none;
 }
-
 .control-group.focus textarea,
 .control-group.focus input[type="text"],
 .control-group.focus input[type="password"],
@@ -7399,7 +7198,6 @@ input[type="email"]:focus,
 .uneditable-input:focus {
     border-color: #909090;
 }
-
 input[type="text"].error-tips,
 textarea.error-tips,
 .control-group.error textarea,
@@ -7410,7 +7208,6 @@ textarea.error-tips,
     border-color: #e74c3c;
     color: #e74c3c;
 }
-
 .control-group.success textarea,
 .control-group.success input[type="text"],
 .control-group.success input[type="password"],
@@ -7419,7 +7216,6 @@ textarea.error-tips,
     border-color: #2ecc71;
     color: #2ecc71;
 }
-
 input[disabled],
 input[readonly],
 textarea[disabled],
@@ -7429,28 +7225,22 @@ textarea[readonly] {
     color: #999999;
     cursor: default;
 }
-
 .col-input-login {
     text-align: center;
 }
-
 .col-input-login .btn {
     width: 115px;
 }
-
 .col-input-login .btn + .btn {
     margin-left: 10px;
 }
-
 .pop-content .about-pwd {
     margin: 0 0 10px 125px;
 }
-
 .alert-info {
     background: #dff1ed;
     border-color: #cbede5;
 }
-
 .letter-pic-box {
     float: left;
     margin: 0 5px 5px 0;
@@ -7458,25 +7248,20 @@ textarea[readonly] {
     width: 80px;
     height: 80px;
 }
-
 .letter-pic-box img {
     width: 80px;
     position: relative;
     z-index: 1;
 }
-
 .letter-pic-box:hover {
     cursor: pointer;
 }
-
 .letter-pic-box:hover .mask {
     display: block;
 }
-
 .letter-pic-box:hover .icon-remove-circle {
     display: block;
 }
-
 .letter-pic-box .icon-remove-circle {
     display: none;
     position: absolute;
@@ -7487,10 +7272,8 @@ textarea[readonly] {
     z-index: 4;
     -webkit-font-smoothing: antialiased;
 }
-
 .btn-upload {
     margin-top: 47px;
     margin-left: 10px;
 }
-
 /* popup-wrap end */
