@@ -60,7 +60,7 @@ public class InitDataBaseTests {
             loginTicket.setExpired(date);
             loginTicket.setTicket(String.format("TICKET{%d}", i));
             loginTicketDao.save(loginTicket);
-            loginTicketDao.updateTicketByStatus(2, loginTicket.getTicket());
+            loginTicketDao.updateStatusByTicket(2, loginTicket.getTicket());
 
 
         }

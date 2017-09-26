@@ -50,7 +50,8 @@ public class LoginController {
     @ResponseBody
     public String login(Model model, @RequestParam("username") String username,
                         @RequestParam("password") String password,
-                        @RequestParam(value = "rember", defaultValue = "0") int remeber) {
+                        @RequestParam(value = "rember", defaultValue = "0") int remeber,
+                        HttpServletResponse response) {
         try {
             Map<String, Object> map = userService.login(username, password);
             if (map.containsKey("ticket")) {
@@ -58,7 +59,9 @@ public class LoginController {
                 cookie.setPath("/");
                 if (remeber > 0)
                     cookie.setMaxAge(3600 * 24 * 7);
+                response.addCookie(cookie);
                 return HeadlineUtil.getJSONString(0, "登录成功");
+
             } else
                 return HeadlineUtil.getJSONString(1, map);
 

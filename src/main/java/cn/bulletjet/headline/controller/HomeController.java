@@ -1,6 +1,6 @@
 package cn.bulletjet.headline.controller;
 
-import cn.bulletjet.headline.dao.NewsDao;
+
 import cn.bulletjet.headline.model.News;
 import cn.bulletjet.headline.model.ViewObject;
 import cn.bulletjet.headline.service.NewsService;
@@ -8,13 +8,11 @@ import cn.bulletjet.headline.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.bind.annotation.*;
+
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -46,11 +44,12 @@ public class HomeController {
     }
 
     @RequestMapping(path = {"/"}, method = {RequestMethod.GET, RequestMethod.POST})
-    public String index(Model model) {
+    public String index(Model model, @RequestParam(value = "pop", defaultValue = "0") int pop) {
         Date cur_date = new Date();
         cur_date.setTime(cur_date.getTime());
         model.addAttribute("cur_date", cur_date);
         model.addAttribute("vos", getNews(0));
+        model.addAttribute("pop", pop);
         return "home";
     }
 
@@ -60,6 +59,7 @@ public class HomeController {
         cur_date.setTime(cur_date.getTime());
         model.addAttribute("cur_date", cur_date);
         model.addAttribute("vos", getNews(userId));
-        return "homeIndex";
+        return "home";
     }
+
 }

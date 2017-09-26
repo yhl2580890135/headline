@@ -15,7 +15,6 @@
 
 </head>
 <body class="welcome_index">
-
 <header class="navbar navbar-default navbar-static-top bs-docs-nav" id="top" role="banner">
     <div class="container">
         <div class="navbar-header">
@@ -32,18 +31,18 @@
                 <h3>你关心的才是头条</h3>
             </a>
         </div>
-
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 
             <ul class="nav navbar-nav navbar-right">
                 <li class=""><a href="http://nowcoder.com/explore">发现</a></li>
 
-            <#if user?exists>
+            <#if user??>
                 <li class="js-login"><a href="javascript:void(0);">${user.username}</a></li>
             <#else>
                 <li class="js-login"><a href="javascript:void(0);">登陆</a></li>
             </#if>
             </ul>
+
 
         </nav>
     </div>
@@ -91,7 +90,7 @@
                             </div>
                             <div class="media">
                                 <div class="media-left">
-                                    <img class="media-object app-qrcode" src="../images/res/qrcode.png" alt="App qrcode web index">
+                                    <img class="media-object app-qrcode" src="/images/res/qrcode.png" alt="App qrcode web index">
                                 </div>
                                 <div class="media-body">
                                     <div class="buttons">
@@ -109,8 +108,8 @@
 
     <div class="container" id="daily">
         <div class="jscroll-inner">
-
         <div class="daily">
+
         <#setting date_format="yyyy-MM-dd">
         <#list vos as map>
             <#if (cur_date?date?matches(map.news.createdDate?date)) == false>
@@ -141,9 +140,7 @@
                         </h3>
                         <div class="meta">
                         ${map.news.link}
-                            <span>
-                                            <i class="fa icon-comment"></i> ${map.news.commentCount}
-                                        </span>
+                            <span><i class="fa icon-comment"></i> ${map.news.commentCount}</span>
                         </div>
                     </div>
                 </div>
@@ -178,54 +175,14 @@
             </div>
             </#if>
         </#list>
+
+
         </div>
     </div>
 </div>
 
 </div>
 
-<footer>
-    <div class="container">
-        <p class="text-center">
-            <a href="http://nowcoder.com/about">关于我们</a>
-            <a href="http://nowcoder.com/download">头条客户端</a>
-        </p>
-        <p class="text-center">© 2013-2016 头条八卦</p>
-    </div>
-
-</footer>
-
-<div id="quick-download">
-    <button type="button" class="close-link btn-link" data-toggle="modal" data-target="#quick-download-app-modal"><i
-            class="fa icon-times-circle"></i></button>
-
-    <a class="download-link" href="http://nowcoder.com/download">
-        <h3>牛客网</h3>
-        <h4>程序员的首选学习分享平台</h4>
-        <button type="button" class="btn btn-info btn-sm">下载 APP</button>
-    </a>
-
-    <div class="modal fade" id="quick-download-app-modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">提示</div>
-                <div class="modal-body">
-                    <div class="checkbox">
-                        <label class="i-checks">
-                            <input id="already-installed" type="checkbox"><i></i> 我已安装了牛客网App，不再显示
-                        </label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-block btn-default" id="close-quick-download-app-modal">关 闭
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<
 <footer>
     <div class="container">
         <p class="text-center">
@@ -278,6 +235,7 @@
 <script type="text/javascript" src="/scripts/main/component/popup.js"></script>
 <script type="text/javascript" src="/scripts/main/component/popupLogin.js"></script>
 <script type="text/javascript" src="/scripts/main/site/home.js"></script>
+
 
 </body>
 </html>
