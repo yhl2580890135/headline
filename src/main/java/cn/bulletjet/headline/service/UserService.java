@@ -50,7 +50,6 @@ public class UserService {
         user.setHeadUrl(head);
         user.setPassword(HeadlineUtil.MD5(password + user.getSalt()));
         userDao.save(user);
-
         // 登陆
         String ticket = addLoginTicket(user.getId());
         map.put("ticket", ticket);

@@ -29,12 +29,26 @@ repositories {
 
 
 dependencies {
+	// https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.6'
+   // https://mvnrepository.com/artifact/javax.mail/mail
+	compile group: 'javax.mail', name: 'mail', version: '1.5.0-b01'
+	// https://mvnrepository.com/artifact/javax.mail/javax.mail-api
+	compile group: 'javax.mail', name: 'javax.mail-api', version: '1.6.0'
 
+	// https://mvnrepository.com/artifact/javax.activation/activation
+	compile group: 'javax.activation', name: 'activation', version: '1.1.1'
+
+	// Jedis
+	compile("redis.clients:jedis:2.9.0")
+
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.39'
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.boot:spring-boot-starter-aop')
 	compile('org.springframework.boot:spring-boot-starter-cache')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 //	compile('org.springframework.boot:spring-boot-starter-data-redis')
+	compile 'com.qiniu:qiniu-java-sdk:7.2.+'
 	compile('org.springframework.boot:spring-boot-starter-freemarker')
 	compile('org.springframework.boot:spring-boot-starter-validation')
 	compile('org.springframework.boot:spring-boot-starter-web')

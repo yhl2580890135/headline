@@ -1,15 +1,27 @@
 package cn.bulletjet.headline.util;
 
 
+import com.alibaba.fastjson.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.security.MessageDigest;
 import java.util.Map;
 
-import net.minidev.json.JSONObject;
+
 public class HeadlineUtil {
     private static final Logger logger = LoggerFactory.getLogger(HeadlineUtil.class);
+    public static String[] TARGET = new String[]{"png", "jpeg", "bmp", "jpg"};
+    public static String UPLOAD_DIR = "F:/images/";
+    //public static String DOMAIN="http://127.0.0.1:8080/";  //判断文件是否是图片文件
+
+    public static boolean islegal(String suffix) {
+        for (String s : TARGET) {
+            if (s.equals(suffix))
+                return true;
+        }
+        return false;
+    }
 
     public static String getJSONString(int code) {
         JSONObject json = new JSONObject();

@@ -33,6 +33,7 @@
             }
         });
     }
+
     function fClickLogin() {
         var that = this;
         PopupLogin.show({
