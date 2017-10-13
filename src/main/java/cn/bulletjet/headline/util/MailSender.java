@@ -41,8 +41,8 @@ public class MailSender implements InitializingBean {
         }
 
         try {
-            String nick = MimeUtility.encodeText("牛客中级课");
-            InternetAddress from = new InternetAddress(nick + "<course@nowcoder.com>");
+            String nick = MimeUtility.encodeText("头条资讯");
+            InternetAddress from = new InternetAddress(nick + "<2580890135@qq.com>");
             MimeMessage mimeMessage = mailSender.createMimeMessage();
             MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage);
             mimeMessageHelper.setTo(to);
@@ -62,9 +62,9 @@ public class MailSender implements InitializingBean {
         mailSender = new JavaMailSenderImpl();
 
         // 请输入自己的邮箱和密码，用于发送邮件
-        mailSender.setUsername("course@nowcoder.com");
-        mailSender.setPassword("【你自己的密码】");
-        mailSender.setHost("smtp.exmail.qq.com");
+        mailSender.setUsername("2580890135@qq.com");
+        mailSender.setPassword("hlhndxslvwdcebhb");
+        mailSender.setHost("smtp.qq.com");
         // 请配置自己的邮箱和密码
 
         mailSender.setPort(465);

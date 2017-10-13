@@ -1,5 +1,8 @@
 package cn.bulletjet.headline.controller;
 
+import cn.bulletjet.headline.async.EventModel;
+import cn.bulletjet.headline.async.EventProducer;
+import cn.bulletjet.headline.async.EventType;
 import cn.bulletjet.headline.service.UserService;
 import cn.bulletjet.headline.util.HeadlineUtil;
 import org.slf4j.Logger;
@@ -18,6 +21,8 @@ import java.util.Map;
 public class LoginController {
     @Autowired
     private UserService userService;
+    @Autowired
+    EventProducer eventProducer;
     private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 
     @RequestMapping(path = {"/reg/"}, method = {RequestMethod.GET, RequestMethod.POST})
@@ -52,6 +57,7 @@ public class LoginController {
                         @RequestParam("password") String password,
                         @RequestParam(value = "rember", defaultValue = "0") int remeber,
                         HttpServletResponse response) {
+
         try {
             Map<String, Object> map = userService.login(username, password);
             if (map.containsKey("ticket")) {
@@ -60,12 +66,20 @@ public class LoginController {
                 if (remeber > 0)
                     cookie.setMaxAge(3600 * 24 * 7);
                 response.addCookie(cookie);
+//                eventProducer.fireEvent(
+//                        new EventModel(EventType.LOGIN).setActorId((int) map.get("userId")).
+//                                setExt("username", "牛客").setExt("to", "851234786@qq.com"));
                 return HeadlineUtil.getJSONString(0, "登录成功");
 
-            } else
+            } else {
+                if (map.get("userId") != null)
+                    eventProducer.fireEvent(
+                            new EventModel(EventType.LOGIN).setActorId((int) map.get("userId")).
+                                    setExt("username", "牛客").setExt("to", "851234786@qq.com"));
                 return HeadlineUtil.getJSONString(1, map);
-
+            }
         } catch (Exception e) {
+            e.printStackTrace();
             logger.error("登录异常" + e.getMessage());
             return HeadlineUtil.getJSONString(1, "登录异常");
         }

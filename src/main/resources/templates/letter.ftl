@@ -2,49 +2,50 @@
 <div id="main">
     <div class="container">
         <ul class="letter-list">
-        <#list conversations as conversation >
-            <li id="conversation-item-10005_622873">
-                <a class="letter-link"
-                   href="/msg/detail?conversationId=${conversation.conversation.conversationId}"></a>
-                <div class="letter-info">
-                    <span class="l-time"> ${conversation.conversation.createdDate}</span>
-                    <div class="l-operate-bar">
+        <#if  conversations??>
+            <#list conversations as conversation >
+                <li id="conversation-item-10005_622873">
+                    <a class="letter-link"
+                       href="/msg/detail?conversationId=${conversation.conversation.conversationId}"></a>
+                    <div class="letter-info">
+                        <span class="l-time"> ${conversation.conversation.createdDate}</span>
+                        <div class="l-operate-bar">
 
-                        <a href="/msg/deleteConversation?conversationId=${conversation.conversation.conversationId}"
-                           class="sns-action-del" data-id="">
-                            删除
-                        </a>
+                            <a href="/msg/deleteConversation?conversationId=${conversation.conversation.conversationId}"
+                               class="sns-action-del" data-id="">
+                                删除
+                            </a>
 
-                        <a href="/msg/detail?conversationId=${conversation.conversation.conversationId}">
-                            共${conversation.totalCount}条会话
+                            <a href="/msg/detail?conversationId=${conversation.conversation.conversationId}">
+                                共${conversation.totalCount}条会话
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="chat-headbox">
+                        <#if (conversation.unreadCount >0)>
+                            <span class="msg-num">
+                            ${conversation.unreadCount}
+                        </span>
+                        </#if>
+                        <a class="list-head" href="/user/${conversation.targetId}">
+                            <img src="${conversation.headUrl}">
                         </a>
                     </div>
-                </div>
-
-                <div class="chat-headbox">
-                    <#if (conversation.unreadCount >0)>
-                        <span class="msg-num">
-                        ${conversation.unreadCount}
-                        </span>
-                    </#if>
-                    <a class="list-head" href="/user/${conversation.targetId}">
-                        <img alt="头像" src="${conversation.headUrl}">
-                    </a>
-                </div>
-                <div class="letter-detail">
-                    <a title="${conversation.userName}" class="letter-name level-color-1">
-                    ${conversation.userName}
-                    </a>
-                    <p class="letter-brief">
-                        <a href="/msg/detail?conversationId=${conversation.conversation.conversationId}">
-                        ${conversation.conversation.content}
+                    <div class="letter-detail">
+                        <a title="${conversation.userName}" class="letter-name level-color-1">
+                        ${conversation.userName}
                         </a>
-                    </p>
-                </div>
-            </li>
-        </#list>
+                        <p class="letter-brief">
+                            <a href="/msg/detail?conversationId=${conversation.conversation.conversationId}">
+                            ${conversation.conversation.content}
+                            </a>
+                        </p>
+                    </div>
+                </li>
+            </#list>
         </ul>
-
+        </#if>
     </div>
     <script type="text/javascript">
         $(function () {

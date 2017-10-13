@@ -18,6 +18,9 @@ import java.util.List;
 @Repository
 
 public interface NewsDao extends PagingAndSortingRepository<News, Integer> {
+
+    Page<News> findAll(Pageable pageable);
+
     @Transactional
     @Modifying
     @Query("update News n set n.commentCount=?2 where n.id=?1")

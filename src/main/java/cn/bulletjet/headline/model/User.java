@@ -1,5 +1,7 @@
 package cn.bulletjet.headline.model;
 
+import org.springframework.data.domain.Page;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -23,7 +25,6 @@ public class User {
     public List<News> getNews() {
         return news;
     }
-
     public void setNews(List<News> news) {
         this.news = news;
     }

@@ -101,9 +101,7 @@
                         </h3>
                         <div class="meta">
                         ${map.news.link}
-                            <span>
-                                            <i class="fa icon-comment"></i> ${map.news.commentCount}
-                                        </span>
+                            <span><i class="fa icon-comment"></i> ${map.news.commentCount}</span>
                         </div>
                     </div>
                 </div>
@@ -136,11 +134,24 @@
             </div>
             </#if>
         </#list>
-
-
         </div>
     </div>
+
 </div>
+</div>
+<div>
+    <center>
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+        <#if last??>
+            <#list 0..last as t>
+                <li><a href="http://127.0.0.1:8080/?pageNum=${t}">${t+1}</a></li>
+            </#list>
+        </#if>
+            <li><a href="#">&raquo;</a></li>
+
+        </ul>
+    </center>
 </div>
 <#if pop??>
 <script>

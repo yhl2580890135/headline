@@ -7,6 +7,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StreamUtils;
@@ -86,20 +90,7 @@ public class NewsController {
             logger.error("图片上传失败！" + e.getMessage());
             return HeadlineUtil.getJSONString(1, "上传失败");
         }
-
     }
-
-    @RequestMapping(path = {"/image"}, method = RequestMethod.GET)
-    @ResponseBody
-    public void getImage(@RequestParam("name") String imageName, HttpServletResponse response) {
-        response.setContentType("image/jpeg");//返回图片
-        try {
-            StreamUtils.copy(new FileInputStream(new File(HeadlineUtil.UPLOAD_DIR + imageName)), response.getOutputStream());
-        } catch (IOException e) {
-            logger.error("读取图片错误" + imageName + e.getMessage());
-        }
-    }
-
     @RequestMapping(path = {"/user/addNews/"}, method = {RequestMethod.POST})
     @ResponseBody
     public String addNews(@RequestParam("image") String image,

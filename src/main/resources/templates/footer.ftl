@@ -7,7 +7,7 @@
         <p class="text-center">© 2013-2016 头条八卦</p>
     </div>
 
-</footer>
+
 
 <div id="quick-download">
     <button type="button" class="close-link btn-link" data-toggle="modal" data-target="#quick-download-app-modal"><i
@@ -38,5 +38,5 @@
         </div>
     </div>
 </div>
-
+</footer>
 </body></html>

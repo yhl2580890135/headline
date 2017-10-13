@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.File;
 import java.util.*;
 
 @Service
@@ -18,11 +19,10 @@ public class UserService {
     private static final Logger logger = LoggerFactory.getLogger(UserService.class);
     @Autowired
     private UserDao userDao;
-
-
     @Autowired
     private LoginTicketDao loginTicketDao;
-
+    @Autowired
+    private QiniuService qiniuService;
     public Map<String, Object> register(String username, String password) {
         Map<String, Object> map = new HashMap<String, Object>();
         if (username.equals("")) {
@@ -77,10 +77,11 @@ public class UserService {
         }
 
         if (!HeadlineUtil.MD5(password + user.getSalt()).equals(user.getPassword())) {
+            map.put("userId", user.getId());
             map.put("msgpwd", "密码不正确");
             return map;
         }
-
+        map.put("userId", user.getId());
         String ticket = addLoginTicket(user.getId());
         map.put("ticket", ticket);
         return map;

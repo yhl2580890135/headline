@@ -22,7 +22,7 @@
 
             <div class="content">
                 <div class="content-img">
-                    <img src="${news.image}" alt="">
+                    <img class="content-img" src="${news.image}" alt="">
                 </div>
                 <div class="content-main">
                     <h3 class="title">
@@ -90,7 +90,7 @@
             </form>
         <#else>
             <div class="login-actions">
-                <a class="btn btn-success" href="/?pop=1">登录后评论</a>
+                <a class="btn btn-success" href="http://127.0.0.1:8080/?pop=1">登录后评论</a>
             </div>
         </#if>
         </div>

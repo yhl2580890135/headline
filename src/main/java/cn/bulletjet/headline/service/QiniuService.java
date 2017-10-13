@@ -32,7 +32,6 @@ public class QiniuService {
     String SECRET_KEY = "JIPosXyRkGEJ1I-deItCgr3ByCjBlPFMmIO6q2AI";
     //要上传的空间
     String bucketname = "headline";
-
     //密钥配置
     Auth auth = Auth.create(ACCESS_KEY, SECRET_KEY);
     //创建上传对象

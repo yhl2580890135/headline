@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>头条资讯 - 牛客网</title>
+    <title>头条资讯</title>
     <meta name="viewport"
           content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="keywords" content="读《Web 全栈工程师的自我修养》">
@@ -48,11 +48,12 @@
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 
             <ul class="nav navbar-nav navbar-right">
-
+                <li><a href="http://127.0.0.1:8080/">首页</a></li>
             <#if user??>
                 <li class="js-share"><a href="javascript:void(0);">分享</a></li>
                 <li class=""><a href="/msg/list">站内信</a></li>
                 <li class=""><a href="/user/${user.id}/">${user.username}</a></li>
+                <li class=""><a href="/logout/">注销</a></li>
             <#else>
                 <li class="js-login"><a href="javascript:void(0);">登陆</a></li>
             </#if>

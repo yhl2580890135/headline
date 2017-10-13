@@ -5,7 +5,7 @@
         <#list messages as msg>
             <li id="msg-item-4009580">
                 <a class="list-head">
-                    <img alt="头像" src="${msg.headUrl}">
+                    <img src="${msg.headUrl}">
                 </a>
                 <div class="tooltip fade right in">
                     <div class="tooltip-arrow"></div>

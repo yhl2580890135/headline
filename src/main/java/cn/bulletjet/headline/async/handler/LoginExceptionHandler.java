@@ -26,15 +26,19 @@ public class LoginExceptionHandler implements EventHandler {
     public void doHandle(EventModel model) {
         Message message = new Message();
         message.setToId(model.getActorId());
-        message.setContent("你上次的登陆IP异常");
+        message.setContent("你上次登陆异常");
         // SYSTEM ACCOUNT
         message.setFromId(3);
+        if (3 < model.getEntityOwnerId())
+            message.setConversationId(String.format("%d_%d", 3, model.getEntityOwnerId()));
+        else
+            message.setConversationId(String.format("%d_%d", model.getEntityOwnerId(), 3));
         message.setCreatedDate(new Date());
         messageService.addMessage(message);
 
         Map<String, Object> map = new HashMap();
         map.put("username", model.getExt("username"));
-        mailSender.sendWithHTMLTemplate(model.getExt("to"), "登陆异常", "mails/welcome.html", map);
+        mailSender.sendWithHTMLTemplate(model.getExt("to"), "登陆异常", "mails/welcome.ftl", map);
     }
 
     @Override

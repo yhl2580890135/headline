@@ -12,6 +12,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -34,24 +35,6 @@ public class NewsService {
 
     public News findById(int Id) {
         return newsDao.findById(Id).orElse(null);
-    }
-
-    //保存图片 到本地目录 返回的图片的url
-    public String saveImage(MultipartFile file) throws IOException {
-        System.out.println(file.getOriginalFilename());
-        int point = file.getOriginalFilename().lastIndexOf(".");//获得最后一个点的位置。
-        String suffix = null;
-        if (point < 0)
-            return null;
-        else {
-            suffix = file.getOriginalFilename().substring(point + 1).toLowerCase();
-            if (!HeadlineUtil.islegal(suffix))
-                return null;
-            String fileName = UUID.randomUUID().toString().replace("-", "") + "." + suffix;
-            Files.copy(file.getInputStream(), new File(HeadlineUtil.UPLOAD_DIR + fileName).toPath(), StandardCopyOption.REPLACE_EXISTING);
-            //这个返回的是图片的访问地址
-            return "image?name=" + fileName;
-        }
     }
 
     public void addNews(News news) {
